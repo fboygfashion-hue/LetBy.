@@ -1,0 +1,8 @@
+# After filling .env with your Neon DB URL:
+
+npx prisma generate        # generates Prisma client
+npx prisma migrate dev     # runs migrations
+npx tsx src/prisma/seed.ts # seeds categories
+
+# Then run the search index migration manually:
+psql $DATABASE_URL -f src/prisma/migrations/add_fulltext_search.sql
