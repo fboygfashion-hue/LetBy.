@@ -1,0 +1,46 @@
+letby-backend/
+├── src/
+│   ├── modules/
+│   │   ├── auth/
+│   │   │   ├── auth.controller.ts
+│   │   │   ├── auth.service.ts
+│   │   │   ├── auth.routes.ts
+│   │   │   └── auth.middleware.ts
+│   │   ├── listings/
+│   │   │   ├── listings.controller.ts
+│   │   │   ├── listings.service.ts
+│   │   │   ├── listings.routes.ts
+│   │   │   └── listings.validator.ts
+│   │   ├── users/
+│   │   ├── reviews/
+│   │   ├── verification/
+│   │   ├── admin/
+│   │   ├── reports/
+│   │   └── notifications/
+│   ├── bot/
+│   │   ├── bot.ts
+│   │   ├── handlers/
+│   │   │   ├── search.handler.ts
+│   │   │   ├── listing.handler.ts
+│   │   │   ├── negotiation.handler.ts
+│   │   │   └── review.handler.ts
+│   │   └── keyboards/
+│   ├── prisma/
+│   │   └── schema.prisma
+│   ├── middleware/
+│   │   ├── auth.middleware.ts
+│   │   ├── rateLimit.middleware.ts
+│   │   ├── error.middleware.ts
+│   │   └── validate.middleware.ts
+│   ├── config/
+│   │   ├── env.ts
+│   │   ├── redis.ts
+│   │   └── cloudinary.ts
+│   ├── utils/
+│   │   ├── jwt.ts
+│   │   ├── telegram.verify.ts
+│   │   └── trust.score.ts
+│   └── app.ts
+├── .env
+├── package.json
+└── tsconfig.json
