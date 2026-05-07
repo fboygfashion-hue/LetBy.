@@ -1,0 +1,13 @@
+User sends message
+       ↓
+Bot handler receives text
+       ↓
+Search handler → calls /api/listings?q=...
+       ↓
+Returns formatted results with trust scores
+       ↓
+User selects listing → bot fetches /api/listings/:id
+       ↓
+User negotiates → bot manages state in Redis session
+       ↓
+User contacts seller → bot sends Telegram deep link to seller
