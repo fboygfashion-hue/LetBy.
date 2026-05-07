@@ -1,0 +1,28 @@
+Mini App Opens
+     │
+     ▼
+Telegram injects window.Telegram.WebApp.initData
+     │
+     ▼
+Frontend sends: POST /api/auth/telegram
+  body: { initData: "..." }
+     │
+     ▼
+verifyTelegramInitData()
+  → HMAC-SHA256 signature check
+  → auth_date expiry check (24hr)
+  → parse user object
+     │
+     ├── INVALID → 401 UNAUTHORIZED
+     │
+     ▼
+prisma.user.upsert()
+  → first visit → creates new user (BUYER role)
+  → return visit → updates name/photo only
+     │
+     ▼
+signToken({ userId, telegramId, role })
+cache.set(`session:${userId}`, ..., 7days)
+     │
+     ▼
+Returns: { token, user }
