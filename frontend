@@ -1,0 +1,43 @@
+letby-frontend/
+├── src/
+│   ├── pages/
+│   │   ├── Home.tsx
+│   │   ├── Marketplace.tsx
+│   │   ├── ListingDetail.tsx
+│   │   ├── SellerProfile.tsx
+│   │   ├── CreateListing.tsx
+│   │   ├── Verification.tsx
+│   │   ├── Settings.tsx
+│   │   └── admin/
+│   │       └── Dashboard.tsx
+│   ├── components/
+│   │   ├── ui/
+│   │   │   ├── ProductCard.tsx
+│   │   │   ├── SellerBadge.tsx
+│   │   │   ├── TrustScore.tsx
+│   │   │   ├── SearchBar.tsx
+│   │   │   ├── FilterModal.tsx
+│   │   │   ├── ImageUploader.tsx
+│   │   │   ├── Skeleton.tsx
+│   │   │   └── Toast.tsx
+│   │   ├── layout/
+│   │   │   ├── BottomNav.tsx
+│   │   │   └── AppShell.tsx
+│   ├── store/
+│   │   ├── auth.store.ts
+│   │   ├── listings.store.ts
+│   │   └── ui.store.ts
+│   ├── hooks/
+│   │   ├── useTelegram.ts
+│   │   ├── useListings.ts
+│   │   └── useAuth.ts
+│   ├── lib/
+│   │   ├── api.ts
+│   │   └── telegram.ts
+│   ├── types/
+│   │   └── index.ts
+│   └── main.tsx
+├── index.html
+├── vite.config.ts
+├── tailwind.config.ts
+└── tsconfig.json
