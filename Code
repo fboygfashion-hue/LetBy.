@@ -1,0 +1,21 @@
+Telegram App
+     │
+     ▼
+[Mini App UI]  ←──────────────────────────────┐
+  React/TS                                     │
+  Vite + Tailwind                              │
+  Telegram SDK                                 │
+     │                                         │
+     ▼ HTTPS REST                              │
+[Express API]                              [Telegram Bot]
+  Node/TS                                  Buyer AI Flow
+  JWT Auth                                 Negotiation
+  Zod Validation                           Notifications
+  Rate Limiting                                │
+     │                                         │
+     ├──────────────────────────────────────── ┘
+     ▼
+[PostgreSQL]          [Redis]           [Cloudinary]
+  Neon DB             Sessions          Product Images
+  Prisma ORM          Rate Limit Cache
+                      Search Cache
