@@ -1,0 +1,17 @@
+POST   /api/auth/telegram          — Verify initData, return JWT
+GET    /api/listings               — Search + filter + paginate
+GET    /api/listings/:id           — Single listing
+POST   /api/listings               — Create listing (auth required)
+PUT    /api/listings/:id           — Edit listing (owner only)
+DELETE /api/listings/:id           — Delete listing
+
+GET    /api/users/:id              — Seller profile + trust score
+POST   /api/reviews                — Leave review (verified buyer)
+GET    /api/reviews/:sellerId      — All reviews for seller
+
+POST   /api/verification/submit    — Submit ID for verification
+GET    /api/verification/status    — Check verification status
+
+POST   /api/reports                — Report scam/listing
+GET    /api/admin/queue            — Pending verifications
+PUT    /api/admin/verify/:userId   — Approve/reject seller
